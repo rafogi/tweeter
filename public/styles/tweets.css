@@ -3,6 +3,10 @@
   border: double;
 }
 
+.old-tweets:hover{
+  box-shadow: 5px 10px #888888;
+}
+
 .tweet-head {
   width: 100%;
   display: flex;
@@ -21,8 +25,12 @@
 }
 
 .handle {
+  display: none;
+}
+
+.old-tweets :hover .handle {
   margin-right: 30px;
-  display: flex;
+  display: block;
   text-align: right;
   color: #9489e8;
 }
