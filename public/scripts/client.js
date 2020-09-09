@@ -1,4 +1,4 @@
-
+$(() => {
 const renderTweets = function(tweets) {
   // loops through tweets
   for(const tweet of tweets) {
@@ -45,7 +45,7 @@ return tweetHtml;
 // createTweetElement(data[0]);
 
 const fetchPosts = () => {
-  // make a GET request to `/api/posts`
+  // make a GET request to `/tweets`
   $.ajax({
     url: '/tweets',
     method: 'GET',
@@ -67,7 +67,13 @@ $postForm.on('submit', function (event) {
   const serializedData = $(this).serialize();
 
   $.post('/tweets', serializedData)
-  .then(function(response) {
-    console.log(response);
+    .then(function(response) {
+    fetchPosts();
+    $(this).children('input').val('');
+
   })
+})
+
+fetchPosts();
+
 })
