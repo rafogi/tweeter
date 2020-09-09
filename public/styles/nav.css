@@ -21,10 +21,7 @@
   font-size: 25px;
 }
 
-.user {
-  display: flex;
-  justify-content: center;
-}
+
 
 .avatar {
   margin: 24px 10px;
@@ -33,6 +30,5 @@
 #arrow {
   display:flex;
   justify-content: center;
-  text-align: center;
   color: #FF0000
 }

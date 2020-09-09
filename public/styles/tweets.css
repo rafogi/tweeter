@@ -1,9 +1,9 @@
-.old-tweets {
+.tweet-container {
   margin-top: 30px;
   border: double;
 }
 
-.old-tweets:hover{
+.tweet-container:hover{
   box-shadow: 5px 10px #888888;
 }
 
@@ -16,7 +16,11 @@
 .user {
   display: flex;
   margin-left: 20px;
+}
 
+.avatar {
+  width:30px;
+  height:30px
 }
 
 .message {
@@ -28,7 +32,7 @@
   display: none;
 }
 
-.old-tweets:hover .handle {
+.tweet-container:hover .handle {
   margin-right: 30px;
   display: block;
   text-align: right;
