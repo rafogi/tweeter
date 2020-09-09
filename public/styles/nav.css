@@ -1,0 +1,27 @@
+
+#logo {
+  font-family: 'bungee';
+  font-size: 50px;
+
+}
+
+.nav-bar {
+  height: 120px;
+  padding: 1.5em;
+  background: #4056A1;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.newTweet {
+  font-size: 25px;
+}
+
+#arrow {
+  display:flex;
+  justify-content: center;
+  text-align: center;
+  color: #FF0000
+}

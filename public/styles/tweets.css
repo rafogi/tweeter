@@ -1,0 +1,51 @@
+.old-tweets {
+  margin-top: 30px;
+  border: double;
+}
+
+.tweet-head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user {
+  display: flex;
+  margin-left: 20px;
+
+}
+
+.message {
+  margin-left: 20px;
+  margin-right:20px;
+}
+
+.handle {
+  margin-right: 30px;
+  display: flex;
+  text-align: right;
+  color: #9489e8;
+}
+
+.tweet-foot {
+  height: 50px;
+  border: 5px solid rgba(78, 80, 76, 0.514);
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.date {
+  margin:0;
+  height: 25px;
+}
+
+.ticons {
+  height: 40px;
+  color: #5d9ef1;
+}

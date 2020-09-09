@@ -6,24 +6,86 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
+     <!-- External CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;1,300;1,700&display=swap" rel="stylesheet">
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/newTweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- App JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    <script src="https://kit.fontawesome.com/dfdee4a345.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
-    <nav>
-      <span>tweeter</span>
+    <nav class="nav-bar">
+      <span id='logo'>tweeter</span>
+        <div class='newTweet'>
+        <div><b>Write</b> a new tweet</div>
+      <i id= 'arrow' class="fas newTweet fa-angle-double-down"></i>
+     </div>
     </nav>
 
+    <header>
+      <section class ="profile">
+      <div class='image'>
+        <img src="/images/profile-hex.png"> 
+      </div>
+      <br>
+      <div class='name'>
+          <h2><b>Raffy</b> Cordero</h2>
+      </div>
+    </section>
+  </header>
+
+
     <!-- Page-specific (main) content here -->
-    <main class="container"></main>
+    <main class="container">
+      <section class="new-tweet">
+        <div class = "topForm">
+        <h2 class='tweetTitle'>Compose Tweet</h2>
+        <form action="/tweets/" method='post'>
+          <label for="tweetText">What are you humming about?</label>
+          <textarea name="text" id="tweetText"></textarea>
+        </div>
+          <div class="bottomForm">
+            <button type="submit">Tweet</button>
+            <output name="counter" id="counter" for="tweet-text">140</output>
+          </div>
+        </form>
+      </section>
+      <article class = 'old-tweets'>
+        <header>
+          <div class = tweet-head>
+            <div class = 'user'>
+              <p><img src="https://i.imgur.com/73hZDYK.png"style="width:30px;height:30px">user</p>
+            </div>
+            <p class = 'handle'>@handle</p>
+          </div>
+        </header>
+        <div class = "message">
+          <p>this is a tweet</p>
+        </div>
+        <footer>
+          <div class = 'tweet-foot'>
+          <p class = 'date'>created at:</p>
+          <div class = 'ticons'>
+          <i class="fas fa-flag"></i>
+          <i class="fas fa-retweet"></i>
+          <i class="fas fa-heart"></i>
+        </div>
+        </div>
+        </footer>
+      </article>
+  </main>
   </body>
 </html>
