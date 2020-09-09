@@ -28,7 +28,7 @@
   display: none;
 }
 
-.old-tweets :hover .handle {
+.old-tweets:hover .handle {
   margin-right: 30px;
   display: block;
   text-align: right;

@@ -33,6 +33,7 @@ button {
 }
 
 #counter {
+  float:right;
   font-family:'Source Sans Pro', sans-serif;
   font-weight:bold;
 }
@@ -44,6 +45,7 @@ textarea {
   background-color: #f8f8f8;
   resize: none;
   outline: none;
+  margin-bottom: 20px;
 
 }
 
