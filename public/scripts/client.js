@@ -28,7 +28,7 @@ const createTweetElement = function(base) {
   </div>
   <footer>
     <div class = 'tweet-foot'>
-    <p class = 'date'>${escape(timeSince(base.created_at))}</p>
+    <p class = 'date'>${escape(timeSince(base.created_at))} ago</p>
     <div class = 'ticons'>
     <i class="fas fa-flag"></i>
     <i class="fas fa-retweet"></i>

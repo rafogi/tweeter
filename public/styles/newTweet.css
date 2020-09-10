@@ -17,7 +17,6 @@ button {
   background-color: #007bff;
   color: #FFFFFF;
   font-family: 'bungee';
-  
 }
 
 #counter {
@@ -39,4 +38,24 @@ textarea {
 
 #counter.red{
   color: red;
+}
+
+.error-message1 {
+  width: 90%;
+  display:none;
+  float:center;
+  border: 5px solid red;
+  text-align: center;
+  color: red;
+  margin: auto;
+}
+
+.error-message2 {
+  width: 90%;
+  display:none;
+  float:center;
+  border: 5px solid red;
+  text-align: center;
+  color: red;
+  margin: auto;
 }

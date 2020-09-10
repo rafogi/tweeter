@@ -36,3 +36,37 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+@media only screen and (min-width: 768px) {
+  body {
+    margin-top: 180px;
+    display: flex;
+    flex-direction: row; 
+  }
+  
+  .nav-bar {
+    background: #4056A1;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  .profile {
+    margin-top: 90px;
+  }
+
+  .nav-bar {
+    background-color: #bf790f;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .newTweet {
+    display:none;
+  }
+
+  #logo {
+    margin: auto;
+  }
+
+}
