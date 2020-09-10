@@ -24,6 +24,7 @@
 }
 
 .message {
+  overflow: hidden;
   margin-left: 20px;
   margin-right:20px;
 }
@@ -62,8 +63,22 @@
   color: #5d9ef1;
 }
 
-.error-message {
+.error-message1 {
+  width: 90%;
+  display:none;
+  float:center;
   border: 5px solid red;
   text-align: center;
   color: red;
+  margin: auto;
+}
+
+.error-message2 {
+  width: 90%;
+  display:none;
+  float:center;
+  border: 5px solid red;
+  text-align: center;
+  color: red;
+  margin: auto;
 }

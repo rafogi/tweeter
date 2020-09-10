@@ -1,5 +1,6 @@
 
 .profile {
+  position:static;
   margin-top: 120px;
   height: 400px;
   width:100%;
@@ -9,6 +10,7 @@
   flex-direction: column; 
   justify-content: center;
   align-content: center;
+  margin-bottom: 80px;
 }
 
 .name {

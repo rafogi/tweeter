@@ -65,16 +65,19 @@ $postForm.on('submit', function (event) {
   event.preventDefault();
   const serializedData = $(this).serialize();
   if (serializedData.length > 145) {
-    const $content = $('<p>').text('Too long yo!').addClass('error-message').fadeIn(200).fadeOut(4500);
-    $('.new-tweet').prepend($content);
+    $('.new-tweet').find('.error-message1').slideDown('slow');
+    return;
   } else if (serializedData.length === 5) {
-    const $content = $('<p>').text('Say something!!').addClass('error-message').fadeIn(200).fadeOut(4500);;
-    $('.new-tweet').prepend($content)
+    $('.new-tweet').find('.error-message2').slideDown('slow');
+    return;
   } else {
     $.post('/tweets', serializedData)
       .then(function(response) {
+      $('.error-message1').slideUp();
+      $('.error-message2').slideUp();
+      $('.old-tweets').empty();
+      $('#tweetText').val('');
       fetchPosts();
-      $(this).children('input').val('');
     })
   }
 })
@@ -85,5 +88,5 @@ const escape =  function(str) {
   return div.innerHTML;
 }
 
-
+fetchPosts();
 

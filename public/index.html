@@ -50,7 +50,9 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <section class="new-tweet">   
+      <section class="new-tweet">
+        <div class ='error-message1'>type something shorter!!</div>
+        <div class ='error-message2'>Say something!!</div>
         <h2 class='tweetTitle'>Compose Tweet</h2>
         <form action="/tweets/" method='post' class = 'tweet-button'>
           <label for="tweetText">What are you humming about?</label>
@@ -59,8 +61,7 @@
             <output name="counter" id="counter" for="tweet-text">140</output>
         </form>
       </section>
-      <article class = 'old-tweets'>
-      </article>
+      <article class = 'old-tweets'></article>
   </main>
   </body>
   <script type="text/javascript" src="/scripts/client.js"></script>

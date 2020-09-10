@@ -1,21 +1,9 @@
 
 .new-tweet {
+  position:static;
   width:100%;
 }
 
-.topForm {
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: space-between;
-  margin-top: 20px;
-}
-
-.bottomForm {
-  display:flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
 .tweetTitle{
   color: #4056a1;
   text-align: center;

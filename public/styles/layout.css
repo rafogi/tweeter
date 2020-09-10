@@ -30,6 +30,7 @@ body {
   display:flex;
   flex-direction: column;
   justify-content: center;
+  flex-wrap: nowrap;
   margin-left: 5%;
   margin-right: 5%;
   background-color: #f4f1ec;
