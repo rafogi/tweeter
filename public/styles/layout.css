@@ -26,15 +26,7 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
-.container {
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 5%;
-  margin-right: 5%;
-  background-color: #f4f1ec;
-  font-family: 'Source Sans Pro', sans-serif;
-}
+
 
 @media only screen and (min-width: 768px) {
   body {
@@ -42,7 +34,7 @@ body {
     display: flex;
     flex-direction: row; 
   }
-  
+
   .nav-bar {
     background: #4056A1;
   }
@@ -53,6 +45,7 @@ body {
   .profile {
     margin-top: 90px;
   }
+
 
   .nav-bar {
     background-color: #bf790f;
@@ -68,5 +61,4 @@ body {
   #logo {
     margin: auto;
   }
-
 }

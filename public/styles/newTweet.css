@@ -1,43 +1,18 @@
+.container {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: #f4f1ec;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 
 .new-tweet {
   position:static;
   width:100%;
-}
-
-.tweetTitle{
-  color: #4056a1;
-  text-align: center;
-  font-family:'Source Sans Pro';
-  font-weight:bold;
-}
-label {
-  color: #9489e8;
-}
-button {
-  background-color: #007bff;
-  color: #FFFFFF;
-  font-family: 'bungee';
-}
-
-#counter {
-  float:right;
-  font-family:'Source Sans Pro', sans-serif;
-  font-weight:bold;
-}
-textarea {
-  width:100%;
-  border: none;
-  border-bottom: 2px solid #ccc;
-  border-radius: 4px;
-  background-color: #f8f8f8;
-  resize: none;
-  outline: none;
-  margin-bottom: 20px;
-
-}
-
-#counter.red{
-  color: red;
 }
 
 .error-message1 {
@@ -59,3 +34,43 @@ textarea {
   color: red;
   margin: auto;
 }
+
+.tweetTitle{
+  color: #4056a1;
+  text-align: center;
+  font-family:'Source Sans Pro';
+  font-weight:bold;
+}
+
+.tweet-button label {
+  color: #9489e8;
+}
+
+.tweet-button textarea {
+  width:100%;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.tweet-button button {
+  background-color: #007bff;
+  color: #FFFFFF;
+  font-family: 'bungee';
+}
+
+#counter {
+  float:right;
+  font-family:'Source Sans Pro', sans-serif;
+  font-weight:bold;
+}
+
+
+#counter.red{
+  color: red;
+}
+

@@ -1,10 +1,3 @@
-
-#logo {
-  font-family: 'bungee';
-  font-size: 50px;
-
-}
-
 .nav-bar {
   position:fixed;top:0;
   width:100%;
@@ -16,13 +9,13 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-.newTweet {
-  font-size: 25px;
+
+
+#logo {
+  font-family: 'bungee';
+  font-size: 50px;
 }
 
-.avatar {
-  margin: 24px 10px;
-}
 
 #arrow {
   display:flex;
