@@ -56,11 +56,13 @@
 .date {
   margin:0;
   height: 25px;
+  overflow:hidden;
 }
 
 .ticons {
   height: 40px;
   color: #5d9ef1;
+  overflow: hidden;
 }
 
 .error-message1 {

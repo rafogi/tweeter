@@ -14,6 +14,6 @@ $(document).ready( () => {
     $('.error-message1').slideUp();
   }
 }
-$('.tweet-button').submit(updateCount);
+
 $('#tweetText').keyup(updateCount);
 });

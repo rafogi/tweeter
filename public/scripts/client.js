@@ -1,4 +1,5 @@
 
+
 const renderTweets = function(tweets) {
   // loops through tweets
   for(const tweet of tweets) {
@@ -27,7 +28,7 @@ const createTweetElement = function(base) {
   </div>
   <footer>
     <div class = 'tweet-foot'>
-    <p class = 'date'>${escape(base.created_at)}</p>
+    <p class = 'date'>${escape(timeSince(base.created_at))}</p>
     <div class = 'ticons'>
     <i class="fas fa-flag"></i>
     <i class="fas fa-retweet"></i>
@@ -58,6 +59,8 @@ const fetchPosts = () => {
   });
 };
 
+
+
 const $postForm = $('.tweet-button');
 
 $postForm.on('submit', function (event) {
@@ -75,6 +78,7 @@ $postForm.on('submit', function (event) {
       .then(function(response) {
       $('.old-tweets').empty();
       $('#tweetText').val('');
+      $('#counter').text('140');
       fetchPosts();
     })
   }
@@ -84,6 +88,34 @@ const escape =  function(str) {
   let div = document.createElement('div');
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
+}
+
+function timeSince(date) {
+
+  let seconds = Math.floor((new Date() - date) / 1000);
+
+  let interval = seconds / 31536000;
+
+  if (interval > 1) {
+    return Math.floor(interval) + " years";
+  }
+  interval = seconds / 2592000;
+  if (interval > 1) {
+    return Math.floor(interval) + " months";
+  }
+  interval = seconds / 86400;
+  if (interval > 1) {
+    return Math.floor(interval) + " days";
+  }
+  interval = seconds / 3600;
+  if (interval > 1) {
+    return Math.floor(interval) + " hours";
+  }
+  interval = seconds / 60;
+  if (interval > 1) {
+    return Math.floor(interval) + " minutes";
+  }
+  return Math.floor(seconds) + " seconds";
 }
 
 fetchPosts();
