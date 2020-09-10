@@ -19,3 +19,9 @@ This repository is the starter code for the project: Students will fork and clon
 ## Features
 
 Type a tweet and click the tweet button to post. Counter at the bottom right increments and decrements depending on the text area. Error message pops up if text is more than 140 characters or if 0. To get rid of the error message, simply put more than 1 character on the text area or less than 140.
+
+## Screenshots
+
+!["Screenshot of Full-Screen tweeter page"](https://github.com/rafogi/tweeter/blob/master/public/images/fullsizetweeter.png)
+
+!["Screenshot of tablet-size tweeter page"](https://github.com/rafogi/tweeter/blob/master/public/images/tabletsizedtweeter.png?raw=true)
