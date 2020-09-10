@@ -4,10 +4,14 @@ $(document).ready( () => {
   const max = 140
   let remaining = max - count;
   $('#counter').text(remaining);
+  if (remaining < 140) {
+    $('.error-message2').slideUp();
+  }
   if (remaining < 0) {
     $('#counter').addClass('red');
   } else {
     $('#counter').removeClass('red');
+    $('.error-message1').slideUp();
   }
 }
 $('.tweet-button').submit(updateCount);

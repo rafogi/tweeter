@@ -73,8 +73,6 @@ $postForm.on('submit', function (event) {
   } else {
     $.post('/tweets', serializedData)
       .then(function(response) {
-      $('.error-message1').slideUp();
-      $('.error-message2').slideUp();
       $('.old-tweets').empty();
       $('#tweetText').val('');
       fetchPosts();
