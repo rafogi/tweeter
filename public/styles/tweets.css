@@ -67,3 +67,9 @@
   overflow: hidden;
 }
 
+.ticons i:hover {
+  font-size: larger;
+  color: #5d9ef1;
+  overflow: hidden;
+}
+
