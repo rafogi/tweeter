@@ -32,18 +32,25 @@ body {
   body {
     margin-top: 180px;
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
+    justify-content: middle; 
   }
 
   .nav-bar {
     background: #4056A1;
   }
+
+  .profile{
+    width: 50vw;
+  }
+
 }
 
 @media only screen and (max-width: 767px) {
 
   .profile {
     margin-top: 90px;
+    width: 100%;
   }
 
 
@@ -56,6 +63,11 @@ body {
 @media only screen and (max-width: 520px) {
   .newTweet {
     display:none;
+  }
+
+  .profile {
+    margin-top: 90px;
+    width: 100%;
   }
 
   #logo {

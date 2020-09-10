@@ -25,12 +25,6 @@
   height:30px
 }
 
-.message {
-  overflow: hidden;
-  margin-left: 20px;
-  margin-right:20px;
-}
-
 .handle {
   display: none;
 }
@@ -40,6 +34,12 @@
   display: block;
   text-align: right;
   color: #9489e8;
+}
+
+.message {
+  overflow: hidden;
+  margin-left: 20px;
+  margin-right:20px;
 }
 
 .tweet-foot {
